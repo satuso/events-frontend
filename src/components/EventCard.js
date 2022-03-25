@@ -1,5 +1,5 @@
-import React from "react"
-import Dates from "./Dates"
+import React from "react";
+import Dates from "./Dates";
 
 const EventCard = ({ event }) => {
   return (
@@ -21,6 +21,6 @@ const EventCard = ({ event }) => {
         <p><i className="fas fa-map-marker-alt"></i> {event.location.address.street_address} {event.location.address.postal_code} {event.location.address.locality}</p>
       </div>
     </div>
-  )
-}
-export default EventCard
+  );
+};
+export default EventCard;

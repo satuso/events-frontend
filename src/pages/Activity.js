@@ -1,12 +1,12 @@
-import React from "react"
-import GoBack from "../components/GoBack"
+import React from "react";
+import GoBack from "../components/GoBack";
 
 const Activity = ({ activity }) => {
   const convertDate = (date) => {
-    const options = {year: "numeric", month: "numeric", day: "numeric" }
-    const convertedDate = new Date(date).toLocaleDateString("fi-FI", options)
-    return convertedDate
-  }
+    const options = {year: "numeric", month: "numeric", day: "numeric" };
+    const convertedDate = new Date(date).toLocaleDateString("fi-FI", options);
+    return convertedDate;
+  };
   return (
     <div className="page">
       <GoBack />
@@ -37,6 +37,6 @@ const Activity = ({ activity }) => {
       {activity.company.businessId && <p>{`Y-tunnus: ${activity.company.businessId}`}</p>} 
       <GoBack />
     </div>
-  )
-}
-export default Activity
+  );
+};
+export default Activity;

@@ -1,11 +1,11 @@
-import React from "react"
+import React from "react";
 
 const Dates = ({ event }) => {
   const convertDate = (date) => {
-    const options = {year: "numeric", month: "numeric", day: "numeric" }
-    const convertedDate = new Date(date).toLocaleDateString("fi-FI", options)
-    return convertedDate
-  }
+    const options = {year: "numeric", month: "numeric", day: "numeric" };
+    const convertedDate = new Date(date).toLocaleDateString("fi-FI", options);
+    return convertedDate;
+  };
   return (
     <div>
       <p>
@@ -18,7 +18,7 @@ const Dates = ({ event }) => {
         </span>
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default Dates
+export default Dates;

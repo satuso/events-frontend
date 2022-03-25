@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const PlaceCard = ({ place }) => {
   return (
@@ -20,6 +20,6 @@ const PlaceCard = ({ place }) => {
         <p><i className="fas fa-map-marker-alt"></i> {place.location.address.street_address} {place.location.address.postal_code} {place.location.address.locality}</p>
       </div>
     </div>
-  )
-}
-export default PlaceCard
+  );
+};
+export default PlaceCard;

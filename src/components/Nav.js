@@ -1,14 +1,13 @@
-import React from "react"
-import { NavLink } from "react-router-dom"
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Nav = ({ setFilter }) => {
   const handleClick = () => {
-    setFilter("")
-  }
+    setFilter("");
+  };
   
   return (
     <div className='nav'>
-      <h1>Löydä tekemistä Helsingissä!</h1>
       <div className="nav-links">
         <NavLink onClick={handleClick} to='/events' className={({ isActive }) => (isActive ? "nav-link active" : "nav-link inactive")}>
           <span>Tapahtumat</span>
@@ -21,6 +20,6 @@ const Nav = ({ setFilter }) => {
         </NavLink>
       </div>
     </div>
-  )
-}
-export default Nav
+  );
+};
+export default Nav;

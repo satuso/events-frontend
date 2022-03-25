@@ -1,10 +1,10 @@
-import React from "react"
-import PlaceCard from "../components/PlaceCard"
-import { Link } from "react-router-dom"
-import Filter from "../components/Filter"
+import React from "react";
+import PlaceCard from "../components/PlaceCard";
+import { Link } from "react-router-dom";
+import Filter from "../components/Filter";
 
 const Places = ({ places, setFilter, message, loading }) => {
-  const tags = ["baari", "galleria", "kahvila", "klubi", "museo", "ravintola", "teatteri"]
+  const tags = ["baari", "galleria", "kahvila", "klubi", "museo", "ravintola", "teatteri"];
   return (
     <div>
       <Filter
@@ -19,6 +19,6 @@ const Places = ({ places, setFilter, message, loading }) => {
         </Link>
       )}
     </div>
-  )
-}
-export default Places
+  );
+};
+export default Places;

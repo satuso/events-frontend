@@ -1,10 +1,10 @@
-import React from "react"
-import ActivityCard from "../components/ActivityCard"
-import { Link } from "react-router-dom"
-import Filter from "../components/Filter"
+import React from "react";
+import ActivityCard from "../components/ActivityCard";
+import { Link } from "react-router-dom";
+import Filter from "../components/Filter";
 
 const Activities = ({ activities, setFilter, message, loading }) => {
-  const tags = ["historia", "luonto", "kansallispuisto", "kävely", "patikointi", "risteily", "saaristo"]
+  const tags = ["historia", "luonto", "kansallispuisto", "kävely", "patikointi", "risteily", "saaristo"];
   return (
     <div>
       <Filter 
@@ -19,6 +19,6 @@ const Activities = ({ activities, setFilter, message, loading }) => {
         </Link>
       )}
     </div>
-  )
-}
-export default Activities
+  );
+};
+export default Activities;

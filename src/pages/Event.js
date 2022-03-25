@@ -1,13 +1,13 @@
-import React from "react"
-import Dates from "../components/Dates"
-import GoBack from "../components/GoBack"
+import React from "react";
+import Dates from "../components/Dates";
+import GoBack from "../components/GoBack";
 
 const Event = ({ event }) => {
   const convertDate = (date) => {
-    const options = {year: "numeric", month: "numeric", day: "numeric" }
-    const convertedDate = new Date(date).toLocaleDateString("fi-FI", options)
-    return convertedDate
-  }
+    const options = {year: "numeric", month: "numeric", day: "numeric" };
+    const convertedDate = new Date(date).toLocaleDateString("fi-FI", options);
+    return convertedDate;
+  };
   return (
     <div className="page">
       <GoBack />
@@ -33,6 +33,6 @@ const Event = ({ event }) => {
       {event.info_url && <p><i className="fas fa-link"></i> <a href={event.info_url} target="blank">{event.name.fi}</a></p>}
       <GoBack />
     </div>
-  )
-}
-export default Event
+  );
+};
+export default Event;

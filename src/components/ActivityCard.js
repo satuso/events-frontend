@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const ActivityCard = ({ activity }) => {
   return (
@@ -16,6 +16,6 @@ const ActivityCard = ({ activity }) => {
         <h2><i className="fas fa-thumbtack"></i> {activity.descriptions.fi ? activity.descriptions.fi.name : activity.descriptions.en.name}</h2>
       </div>
     </div>
-  )
-}
-export default ActivityCard
+  );
+};
+export default ActivityCard;

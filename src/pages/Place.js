@@ -1,13 +1,13 @@
-import React from "react"
-import GoBack from "../components/GoBack"
-import OpeningHours from "../components/OpeningHours"
+import React from "react";
+import GoBack from "../components/GoBack";
+import OpeningHours from "../components/OpeningHours";
 
 const Place = ({ place }) => {
   const convertDate = (date) => {
-    const options = {year: "numeric", month: "numeric", day: "numeric" }
-    const convertedDate = new Date(date).toLocaleDateString("fi-FI", options)
-    return convertedDate
-  }
+    const options = {year: "numeric", month: "numeric", day: "numeric" };
+    const convertedDate = new Date(date).toLocaleDateString("fi-FI", options);
+    return convertedDate;
+  };
 
   return (
     <div className="page">
@@ -34,6 +34,6 @@ const Place = ({ place }) => {
       <p><i className="fas fa-link"></i> <a href={place.info_url} target="blank">{place.name.fi}</a></p>
       <GoBack />
     </div>
-  )
-}
-export default Place
+  );
+};
+export default Place;
